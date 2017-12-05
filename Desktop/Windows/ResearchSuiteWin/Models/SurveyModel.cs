@@ -15,5 +15,11 @@ namespace ResearchSuiteWin.Models
         public string termsAndConditions { get; set; }
         public bool isRequireSignature { get; set; }
         public bool isRequireToAccept { get; set; }
+        public List<BaseStep> steps { get; set; }
+
+        public SurveyModel()
+        {
+            this.steps = new List<BaseStep>();
+        }
     }
 }
