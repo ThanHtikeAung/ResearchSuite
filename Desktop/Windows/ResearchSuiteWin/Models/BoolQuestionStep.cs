@@ -10,8 +10,9 @@ namespace ResearchSuiteWin.Models
     {
         public bool response { get; set; }
 
-        public BoolQuestionStep(string title, string description)
+        public BoolQuestionStep(uint serial, string title, string description)
         {
+            this.serial = serial;
             this.typeId = "step-bool";
             this.title = title;
             this.description = description;

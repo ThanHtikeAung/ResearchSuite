@@ -10,8 +10,9 @@ namespace ResearchSuiteWin.Models
     {
         public decimal response { get; set; }
 
-        public DecimalQuestionStep(string title, string description)
+        public DecimalQuestionStep(uint serial, string title, string description)
         {
+            this.serial = serial;
             this.typeId = "step-decimal";
             this.title = title;
             this.description = description;

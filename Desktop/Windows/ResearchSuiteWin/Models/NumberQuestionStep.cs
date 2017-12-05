@@ -10,8 +10,9 @@ namespace ResearchSuiteWin.Models
     {
         public long response { get; set; }
 
-        public NumberQuestionStep(string title, string description)
+        public NumberQuestionStep(uint serial, string title, string description)
         {
+            this.serial = serial;
             this.typeId = "step-number";
             this.title = title;
             this.description = description;

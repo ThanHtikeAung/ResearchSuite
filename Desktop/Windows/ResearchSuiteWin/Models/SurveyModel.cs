@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Deployment.Application;
 
 namespace ResearchSuiteWin.Models
 {
@@ -17,9 +18,16 @@ namespace ResearchSuiteWin.Models
         public bool isRequireToAccept { get; set; }
         public List<BaseStep> steps { get; set; }
 
-        public SurveyModel()
+        public SurveyModel(string surveyId, string version)
         {
             this.steps = new List<BaseStep>();
+            this.surveyId = surveyId;
+            this.version = version;
+            this.build = 1;
+            this.releaseDt = DateTime.Now;
+            this.termsAndConditions = "T & C";
+            this.isRequireSignature = false;
+            this.isRequireToAccept = false;
         }
     }
 }

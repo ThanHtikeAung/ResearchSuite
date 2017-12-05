@@ -8,6 +8,7 @@ namespace ResearchSuiteWin.Models
 {
     class BaseStep
     {
+        public uint serial { get; set; }
         public string typeId { get; set; }
         public string title { get; set; }
         public string description { get; set; }

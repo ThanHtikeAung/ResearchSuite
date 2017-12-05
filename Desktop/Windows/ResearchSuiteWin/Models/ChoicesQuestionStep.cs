@@ -11,8 +11,9 @@ namespace ResearchSuiteWin.Models
         private Dictionary<string, int> choices;
         public int response { get; set; }
 
-        public ChoicesQuestionStep(string title, string description, Dictionary<string, int> choices)
+        public ChoicesQuestionStep(uint serial, string title, string description, Dictionary<string, int> choices)
         {
+            this.serial = serial;
             this.typeId = "step-choices";
             this.title = title;
             this.description = description;

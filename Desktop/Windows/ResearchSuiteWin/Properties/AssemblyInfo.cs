@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("ResearchSuiteWin")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Takaung")]
 [assembly: AssemblyProduct("ResearchSuiteWin")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
